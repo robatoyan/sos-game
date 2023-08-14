@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.NewSletterSub {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(4, 11, 28, 0.4) 20%, rgba(4, 11, 28, 0.6) 80%), url("https://www.survival-sandbox.de/wp-content/uploads/2018/10/SOS-Battle-Royale-wird-eingestellt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Subscribe {
+    width: clamp(200px, 100%, 652px);
+    min-height: 343px;
+}
+
+.Subscribe h4 {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(20px, 5vw, 24px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.Subscribe h2 {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(30px, 5vw, 47px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.Subscribe p {
+    color: var(--primary-white, #FFF);
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 50px;
+}
+
+.GaminEmail {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.GaminEmail label {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: var(--primary-white, #FFF);
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.6s;
+}
+
+.GaminEmail input {
+    width: clamp(200px, 100%, 372px);
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border: unset;
+    color: var(--accent-yellow, #FFB548);
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+}
+
+.GaminEmail input:hover~label {
+    top: -20px;
+    left: 0px;
+    transition: 0.6s;
+}
+
+.GaminEmail button {
+    width: clamp(200px, 100%, 260px);
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: linear-gradient(181deg, #FFB548 0%, #F3AF34 99.52%);
+    color: var(--dark-brown, #1A1917);
+    text-align: center;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    border: unset;
+    cursor: pointer;
+}
+
+@media screen and (max-width:667px) {
+    .GaminEmail input {
+        width: 200px;
+    }
+
+    .GaminEmail button {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .NewSletterSub {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: center;
+    }
+
+    .GaminEmail {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .Subscribe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .Subscribe p{
+        width: 230px;
+    }
+}

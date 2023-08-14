@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Features {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(4, 11, 28, 0.2) 30%, rgba(4, 11, 28, 1) 100%), url("/public/imgFeatures/img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.information_gaming {
+    width: clamp(200px, 100%, 494px);
+    margin-left: 600px;
+}
+
+.circle_div {
+    width: 50px;
+    height: 50px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features h3 {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(20px, 5vw, 24px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.features h2 {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(30px, 5vw, 50px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.informationGaming {
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.informatinData {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.informatinData h3 {
+    color: var(--accent-yellow, #FFB548);
+    text-align: center;
+    font-size: clamp(18px, 5vw, 23px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.informatinData p {
+    color: var(--primary-white, #FFF);
+    text-align: justify;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .information_gaming {
+        margin-left: unset;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .information_gaming {
+        padding-right: 10px;
+    }
+}

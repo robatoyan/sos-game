@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Footer {
+    width: 100%;
+    min-height: 234px;
+    background-color: rgb(4, 11, 28);
+}
+
+.FooterMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.FooterMenu img {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.FooterMenu .Games-Menu {
+    color: var(--primary-white, #FFF);
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    list-style: none;
+    column-gap: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Games-Menu li {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Games-Menu li:hover {
+    color: #F4AF36;
+    transition: 0.5s;
+}
+.Games-Menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.MenuIcons {
+    color: var(--primary-white, #FFF);
+    font-size: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    list-style: none;
+    column-gap: 18px;
+    display: flex;
+}
+
+.MenuIcons li {
+    cursor: pointer;
+}
+
+.fa-youtube-play {
+    color: #FF1313;
+}
+
+.Outpost_Games {
+    width: clamp(200px, 100%, 1197px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.Outpost_Games h2 {
+    color: var(--primary-white, gray);
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Outpost_Games div {
+    color: var(--primary-white, #FFF);
+    text-align: right;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.Outpost_Games div h3 {
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.Outpost_Games div h4 {
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.Outpost_Games div h5 {
+}

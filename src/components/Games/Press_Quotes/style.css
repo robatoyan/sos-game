@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.PressQuotes {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(4, 11, 28, 0.8) 20%, rgba(4, 11, 28, 0.6) 80%), url("/public/imgPressQuotes/img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    column-gap: 150px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding-bottom: 140px;
+}
+
+.OurMind {
+    width: clamp(200px, 100%, 434px);
+    min-height: 388px;
+}
+
+.OurMind h3 {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(20px, 5vw, 24px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.OurMind h2 {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(40px, 5vw, 50px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.OurMind p {
+    color: var(--primary-white, #FFF);
+    font-size: clamp(16px, 5vw, 18px);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 50px;
+}
+
+.OurMind button {
+    width: clamp(200px, 100%, 260px);
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--accent-yellow, #FFB548);
+    color: var(--dark-brown, #1A1917);
+    text-align: center;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 50px;
+    border: unset;
+    cursor: pointer;
+}
+
+.OurMindComming {
+    width: clamp(200px, 100%, 600px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.UserComments {
+    width: clamp(200px, 100%, 466px);
+    min-height: 181px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    padding-left: 26px;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.imgUser {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--accent-yellow, #FFB548);
+    position: relative;
+}
+
+.imgUser img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    object-fit: cover;
+}
+
+.UserData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.UserData .fa {
+    top: 10px;
+    right: 40px;
+    font-size: 30px;
+    color: gray;
+    margin-left: 100px;
+}
+
+.userName_Programmer h2 {
+    color: var(--accent-yellow, #FFB548);
+    font-size: 24px;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.userName_Programmer h3 {
+    color: var(--primary-white, gray);
+    text-align: justify;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.userName_Programmer {
+    margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.UserComm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    margin-top: 10px;
+}
+.UserComm p {
+    color: var(--primary-white, #FFF);
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.UserComm h3 {
+    color: var(--primary-white, gray);
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media screen and (max-width:600px) {
+    .OurMindComming :nth-child(2){
+        margin-left: unset;
+    }
+    .PressQuotes{
+        padding-top: 100px;
+    }
+    .imgUser{
+        width: 40px;
+        height: 40px;
+    }
+    .UserData .fa {
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,395 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.GamesTop {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(211, 205, 205, 0.0) 20%, rgba(4, 11, 28, 1) 80%), url("/public/imgGameTop/img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.GamingMenu {
+    width: clamp(200px, 100%, 1197px);
+    margin: 0 auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 164px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.TopMenu {
+    padding-top: 22px;
+}
+
+.GameLogoImg {
+    width: 55px;
+    height: 54px;
+}
+
+.GamingMenu .Menu {
+    color: var(--primary-white, #FFF);
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.fa-bars {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+}
+
+.fa-times {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+}
+
+.GamingMenu .Menu li {
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.GamingMenu .Menu li:hover {
+    transform: translate(3.5px);
+    transition: 0.6s;
+    color: var(--accent-yellow, #FFB548);
+}
+
+.Leng_Xb_St {
+    width: 176px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.Eng {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.Eng h2 {
+    color: var(--primary-white, #FFF);
+    text-align: right;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.Eng .fa {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.gameImg {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.activ {
+    position: absolute;
+    top: 33px;
+    width: 70px;
+    min-height: 70px;
+    background: var(--black, #010101);
+    transition: 0.6s;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+}
+
+.activ ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    color: var(--primary-white, #FFF);
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.activ ul li {
+    transition: 0.6s;
+}
+
+.activ ul li:hover {
+    color: var(--accent-yellow, #FFB548);
+    text-align: center;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.noActiv {
+    position: absolute;
+    top: 33px;
+    width: 70px;
+    height: 0px;
+    background: var(--black, #010101);
+    transition: 0.6s;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.noMenuBars a {
+    text-decoration: none;
+    color: white;
+}
+
+.MenuBars {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 100%;
+    background-color:rgba(0, 0, 0,0.8);
+    transition: 0.6s;
+    overflow: hidden;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuBars a {
+    text-decoration: none;
+    color: white;
+}
+
+.MenuBars ul {
+    color: white;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+    list-style: none;
+}
+
+.MenuBars ul li {
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.MenuBars ul li:hover {
+    transition: 0.6s;
+    color: var(--accent-yellow, #FFB548);
+}
+
+.noMenuBars {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    min-height: 100%;
+    background-color: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.noMenuBars ul {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    list-style: none;
+    font-size: 32px;
+
+}
+
+.GameTitle {
+    width: clamp(200px, 100%, 895px);
+    border: white;
+    min-height: 204px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.GameTitle h1 {
+    color: var(--primary-white, #FFF);
+    text-align: center;
+    font-size: clamp(30px, 5vw, 60px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.GameTitle h4 {
+    color: var(--primary-white, #FFF);
+    text-align: center;
+    font-size: clamp(20px, 5vw, 24px);
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.GameTitle .button {
+    width: clamp(200px, 100%, 260px);
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: linear-gradient(181deg, #FFB548 0%, #F3AF34 99.52%);
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    color: var(--dark-brown, #1A1917);
+    text-align: center;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.GameTitle .button div {
+    width: 1px;
+    height: 24px;
+    background-color: gray;
+}
+
+.TheStore {
+    position: absolute;
+    bottom: 54px;
+    left: 46%;
+}
+
+.TheStore a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    text-decoration: none;
+    color: var(--primary-white, #FFF);
+    text-align: justify;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .fa-timesBars {
+        display: flex;
+        font-size: 30px;
+        color: var(--accent-yellow, #FFB548);
+        cursor: pointer;
+    }
+
+    .fa-times {
+        display: flex;
+        font-size: 30px;
+        color: var(--accent-yellow, #FFB548);
+        cursor: pointer;
+    }
+
+    .TheStore {
+        bottom: 14px;
+        left: 40%;
+    }
+
+    .GamingMenu .Menu {
+        display: none;
+    }
+
+    .GamingMenu {
+        flex-direction: column;
+    }
+
+    .GameTitle .button {
+        margin-top: 30px;
+    }
+
+    .GameTitle {
+        top: 65%;
+    }
+
+    .GamingMenu {
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .TheStore {
+        bottom: 14px;
+        left: 34%;
+    }
+}
